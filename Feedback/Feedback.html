@@ -1,0 +1,170 @@
+<!DOCTYPEhtml>
+
+<html>
+  <head>
+  
+		<title>Feedback</title>
+		<link rel = "stylesheet" type="text/css" href= "main1.css">
+		<link rel = "stylesheet" type="text/css" href= "feedback.css">
+		
+		
+	
+		
+  </head>
+  
+  <body>
+  
+	<div class="grid-container">
+		
+			<div class="header">
+			
+				<img src="logo1.png" alt="" id="logo">
+				
+								<!-- This is search bar-->
+			<form id="search-bar" action="#">
+				<input  placeholder="Search..." maxlength="8" id="search">
+				<input type="submit" value="Search" id="submit">   
+			</form>
+				
+				<div class="topnavigation">
+				 
+					<a href="..\Home\home.html">Home</a>
+					 <div class="Genre">
+							<button class="dropbtn "> Genre 
+							  <i class=""></i>
+							</button>
+							<div class="dropdown-Genre">
+							   
+							  <div class="row">
+								<div class="column">
+								
+								  <a href="..\Genre\Family\family.html">Family</a>
+								  <a href="..\Genre\Horror\horror.html">Horror</a>
+								  <a href="..\Genre\Fantasy\fantasy.html">Fantasy</a>
+								  <a href="..\Genre\Adventure\adventure.html">Adventure</a>
+								</div>
+								<div class="column">
+								 
+								</div>
+
+							  </div>
+							</div>
+						  </div> 
+					
+					<a href="..\Funfacts\thumbnail.html">Fun Facts</a>
+					<a href="..\Quiz\quiz.html">Quiz</a>
+					<a href="..\Sitemap\Sitemap.html">Site Map</a>
+					<a href="..\Feedback\Feedback.html">Feedback</a>
+					<a href="..\Our Team\aboutus.html">About Us</a>					
+					<a href="..\Products\My Product Cart.html">Shop</a>
+			</div><!..topnav>
+				
+			</div> <!..header..>
+			
+			<div class="main">
+			
+				<div class="feedback">
+		<h1>Feedback Form</h1>
+		<form id="feedback" onSubmit="jsfeedback()">
+		
+			
+			
+			<label>Name :			</label><input type="text" id="name" placeholder="Name" name ="name"/></br>
+			<label>Address :		</label><input type="text" id="address" placeholder="Address" name ="address"/></br>
+			<label>Telephone No	: 	</label><input type="text" id="telephone" placeholder="+94xxxxxxxxx" name ="telephone"/></br>
+			<label>Email Address:	</label><input type="text" id="email" placeholder="email@gmail.com" name ="email"/></br>
+			<label>Comment :		<textarea name="comments" id="comments" ></textarea></label></br>
+			<label>Rate this Animated Movie site - </label></br>
+			 <div class="rate">
+    <input type="radio" id="star5" name="rate" value="5" />
+    <label for="star5" title="">5 stars</label>
+    <input type="radio" id="star4" name="rate" value="4" />
+    <label for="star4" title="">4 stars</label>
+    <input type="radio" id="star3" name="rate" value="3" />
+    <label for="star3" title="">3 stars</label>
+    <input type="radio" id="star2" name="rate" value="2" />
+    <label for="star2" title="">2 stars</label>
+    <input type="radio" id="star1" name="rate" value="1" />
+    <label for="star1" title="">1 star</label>
+  </div>
+			 
+		</br></br>
+		<input type="submit" value="Submit" id="set"></button>
+		<input type="Reset" value="Reset"></button>
+		</form>		
+	</div> 
+	</div> 
+	<script>
+	function jsfeedback(){
+	var i = document.forms["feedback"]["name"].value;
+			if (i=="") {
+				alert("Please enter the  name");
+				return false;
+}
+	var i = document.forms["feedback"]["address"].value;
+			if (i=="") {
+				alert("Please enter the Address");
+				return false;
+}
+	var i = document.forms["feedback"]["email"].value;
+			if (i=="") {
+				alert("Please enter the email");
+				return false;
+}
+	var i = document.forms["feedback"]["tele"].value;
+			if (i=="") {
+				alert("Please enter the telephone number");
+				return false;
+}
+	var i = document.forms["feedback"]["rating"].value;
+			if (i=="") {
+				alert("Ratings should be filled");
+				return false;
+}
+	var i = document.forms["feedback"]["comments"].value;
+			if (i=="") {
+				alert("Add Comments, That should be filled");
+				return false;
+}
+	else{
+				var name = document.forms["feedback"]["name"].value;
+				var rate = document.forms["feedback"]["rating"].value;
+				var comment = document.forms["feedback"]["comments"].value;
+				alert("Dear "+name+", Thank you for sharing your experience with us. You rated Movie Universe as "+rate+" and your comment was "+comment+ "Your feedback is highly appreciated and will help us to improve our ability to serve you and other users of our web sites. Have a Nice day! "+ name);
+			}
+		}													
+	</script>
+			
+			
+			<div class="footer"> 
+			<p id="site">© 2020 by sitename. The sitename is not responsible for the content from other sites.</p>
+			<div class="related_link">
+								<a href="https://www.facebook.com/"><img src="facebook.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								<a href="https://twitter.com/"><img src="twit.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								<a href="https://www.linkedin.com/login"><img src="linkedin.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								<a href="https://www.instagram.com/accounts/login/"><img src="insta1.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								<a href="https://youtube.com/"><img src="youtube1.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								</div>
+								
+			 <p id="contact-us"> Contact us : <a href="wonderworldanimation@gmail.com">www.wonderworldanimation@gmail.com</a></p>
+			 
+			
+			  
+			  		
+								<button class="f-button"><a href="" >Back to top</a></button>
+								
+
+								<button class="f-button"><a href="..\Editors page\student_02.html" >page editor</a></button>
+			 
+			
+			</div> <!..footer..>
+			
+			
+		
+		</div>  <!..grid-container..>
+	
+	  
+  </body>
+  
+</html>
+			

@@ -1,0 +1,77 @@
+.grid-container1 {
+  display: grid;
+  grid-template-columns: 600px auto ;
+  grid-gap: 10px;
+  padding: 15px;
+}
+
+.grid-container1 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+ 
+  
+}
+h1{
+	font-family: 'Chelsea Market', cursive;
+}
+#ques{
+	padding: 10px 10px 4px;
+	text-align:left;
+	font-family: 'Merriweather', serif;
+	font-size: 25px;
+	}
+.button{
+	width:1318px;
+	height:50px;
+	font-family:  'Merienda One', cursive;
+	font-size:20px;
+	border: 2px solid #276675;
+}
+
+#intro{
+	color:purple;
+	font-family: 'EB Garamond', serif;
+	font-size: 25px;
+}
+#time{
+background-color:#cce1e6;
+font-family: 'EB Garamond', serif;}
+#totalScore{
+background-color:#cce1e6;
+font-family: 'EB Garamond', serif;
+}
+.start{grid-column:1/ span 2;}
+.image1 { grid-area: 2 / 1 ; }
+.question1 { grid-area: 2 / 2  ;}
+.image2 { grid-area: 3 / 1 ; }
+.question2 { grid-area: 3 / 2  ;}
+.image3 { grid-area: 4 / 1 ; }
+.question3 { grid-area: 4 / 2  ;}
+.image4 { grid-area: 5 / 1 ; }
+.question4 { grid-area: 5 / 2  ;}
+.image5 { grid-area: 6 / 1 ; }
+.question5 { grid-area: 6 / 2  ;}
+.image6 { grid-area: 7 / 1 ; }
+.question6 { grid-area: 7 / 2  ;}
+.image7 { grid-area: 8 / 1 ; }
+.question7 { grid-area: 8 / 2  ;}
+.image8 { grid-area: 9 / 1 ; }
+.question8 { grid-area: 9 / 2  ;}
+.image9 { grid-area: 10 / 1 ; }
+.question9 { grid-area: 10 / 2  ;}
+.image10 { grid-area: 11 / 1 ; }
+.question10 { grid-area: 11 / 2  ;}
+.output{
+	grid-row:12;
+	grid-column:1/ span 2;}
+	
+.img{
+	 padding: 10px 10px 4px;
+}
+label{
+	font-family: 'EB Garamond', serif;
+}
+input[type="radio"] {
+    -ms-transform: scale(1.8); 
+    -webkit-transform: scale(2);
+    transform: scale(2);
+}

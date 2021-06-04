@@ -1,0 +1,86 @@
+
+.bgStyle{
+		padding:60px 50px;
+		color:white;
+		font-size:20px;
+		font-weight:bolder;
+	    }
+	
+.menu{
+	   color:white;
+	  
+	  }
+	
+#background{
+	   padding:6px;
+	   background-color:#ab5c3e;
+	   color:white;
+	     }
+	
+#font{
+	   padding:6px;
+	   background-color:#ab5c3e;
+	   color:white;
+	 }
+	
+h1{
+	 color:white;
+     position:absolute;
+	 left:660px;
+	 top:200px;
+   }
+    
+#para{
+   left:550px;	
+   top:1000px;
+   
+}
+
+
+/*===========IMAGES=============*/
+.images{
+	content:"";
+	clear:both;
+	display:table;
+    position: absolute;
+    left: 50px;
+    top: 1000px;
+	
+}
+
+.picture{
+	float:left;
+	padding:10px;
+
+}
+
+.picture:hover{
+	box-shadow: 0 0 5px 5px rgba(0,50,255,0.5);
+	cursor:pointer;
+}
+#cartoons{
+	width:800px;
+	height:500px;
+	position: absolute;
+    left: 50px;
+    top: 450px;
+	
+}
+#discription{
+	 position: absolute;
+     left: 900px;
+     top: 600px;
+	 font-family:Book Antiqua;
+	 font-size:30px;
+	 font-weight:bolder;
+	 color:white;
+	 text-align:left;
+	 width:500px;
+
+}
+.container{
+	padding-top:100px;
+	height:1000px;
+	width:1520px;
+}
+	

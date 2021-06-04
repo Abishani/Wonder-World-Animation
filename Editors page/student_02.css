@@ -1,0 +1,25 @@
+.main{
+		float:left;
+		margin-top:4%;
+		margin-bottom:4%;
+		height:300px;}
+		.main h1{
+		float:left;
+		color:white;
+		font-size:24px;
+		font-family:algerian
+		height:300px;
+		}
+		.main p{
+		margin-top:1%;
+		float:left;
+		color:white;
+		font-family:Calibri;
+		font-size:18px;
+		}
+		.main ol{
+		margin-top:1%;
+		color:white;
+		float:left;
+		font-family:Calibri;
+		font-size:18px;}

@@ -1,0 +1,11 @@
+
+h1{
+	color:white;
+    position:absolute;
+	left:600px;
+	top:280px;
+}
+
+text,rect{
+	cursor:pointer;	  
+}

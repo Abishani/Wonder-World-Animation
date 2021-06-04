@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fun Facts</title>
+  <link href = "thumbnailStyle.css" type="text/css" rel="stylesheet">
+  <link href = "main1.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+ 
+		<div class="grid-container">
+		
+			<div class="header">
+			
+				<img src="logo1.png" alt="" id="logo">
+				
+								<!-- This is search bar-->
+			<form id="search-bar" action="#">
+				<input  placeholder="Search..." maxlength="8" id="search">
+				<input type="submit" value="Search" id="submit">   
+			</form>
+				
+				<div class="topnavigation">
+				 
+					<a href="..\Home\home.html">Home</a>
+					 <div class="Genre">
+							<button class="dropbtn "> Genre 
+							  <i class=""></i>
+							</button>
+							<div class="dropdown-Genre">
+							   
+							  <div class="row">
+								<div class="column">
+								
+								  <a href="..\Genre\Family\family.html">Family</a>
+								  <a href="..\Genre\Horror\horror.html">Horror</a>
+								  <a href="..\Genre\Fantasy\fantasy.html">Fantasy</a>
+								  <a href="..\Genre\Adventure\adventure.html">Adventure</a>
+								</div>
+								<div class="column">
+								 
+								</div>
+
+							  </div>
+							</div>
+						  </div> 
+					
+					<a href="..\Funfacts\thumbnail.html">Fun Facts</a>
+					<a href="..\Quiz\quiz.html">Quiz</a>
+					<a href="..\Sitemap\Sitemap.html">Site Map</a>
+					<a href="..\Feedback\Feedback.html">Feedback</a>
+					<a href="..\Our Team\aboutus.html">About Us</a>					
+					<a href="..\Products\My Product Cart.html">Shop</a>
+			</div><!..topnav>
+				
+			</div> <!..header..>
+			
+<!--creating pull down menus-->
+<div class="container" id="animation">
+   <h1 id="demo">Fun Facts</h1>
+      <!--Background colour and font colour-->
+       <div class="bgStyle">
+         <label class="menu" for = "bgColor">Choose a background colour</label>
+	        <select id ="background" onchange="backgroundStyle()" name = "color1">
+	        <option>Blue</option><!--#81007F-->
+	        <option>Burgundy</option><!--#8D021F-->
+	        <option>Purple</option><!--#EC5578-->
+	        <option>Pine</option><!--01796F-->
+	        <option>Gray</option>
+	     </select>
+         <label class="menu" for = "fontColor">Choose a font colour</label>
+	        <select id ="font" name = "color2" onchange="fontColor()">
+	        <option>White</option>
+	        <option>Pink</option>
+	        <option>Purple</option>
+	        <option>Blue</option>
+	     </select>	 
+       </div>
+   
+   
+   <!--Thumbnail images-->
+<form>
+   <div id= "discription"><p>click the images to see the fun facts</p></div>
+   <div id = "animated movies"><img src = "funfact3.jpg" id="cartoons"></div>
+ </form>
+<div class = "images">
+    <div class = "picture" onclick="function1()">
+        <img src = "funfact3.jpg" alt="zootopia" width="260px" height = "190px" />
+	</div>
+	<div class = "picture" onclick="function2()">
+		<img src = "funfact4.jpg" alt="nemo" width="260px" height = "190px"/>
+	</div>
+	<div class = "picture" onclick="function3()">
+		<img src = "frozen.jpg" alt="frozen" width="260px" height = "190px"/>
+	</div>
+	<div class = "picture" onclick="function4()">
+		<img src = "ratatouille.jpg" alt="ratatouille" width="260px" height = "190px"/>
+	</div>
+    <div class = "picture" onclick="function5()">
+		<img src = "epicblue.jpg" alt="epic" width="260px" height = "190px" />
+	</div>		
+</div>
+</div>
+   
+   <script>
+   //thumbnail images
+	 function function1() {
+	     document.getElementById("cartoons").src = "funfact3.jpg";
+	     document.getElementById("discription").innerHTML = "There are 64 unique species in Zootopia and most species are unique in topology:Elephants have trunks, pigs have snouts; some animals have hooves,some have paws; some have three fingers, some have two.."; 
+											
+	 }
+	 function function2() {
+	     document.getElementById("cartoons").src = "funfact4.jpg";
+	     document.getElementById("discription").innerHTML = "Destiny is the one who taught dory how to speak whale.Because she’s technically a shark, it explains why Dory doesn’t have a great understanding of the language."
+	 }
+	 function function3() {
+	     document.getElementById("cartoons").src = "frozen.jpg";
+	     document.getElementById("discription").innerHTML = "Elsa has more strands of hair than Rapunzel.Rapunzel may have 70 feet of magic glowing hair, but Elsa’s hair contains 420,000 single strands."
+	 }
+	 function function4() {
+	     document.getElementById("cartoons").src = "ratatouille.jpg";
+	     document.getElementById("discription").innerHTML = "Chef Thomas Keller, of the world famous French Laundry restaurant in Napa Valley, created the ratatouille served to Anton Ego at the end of the film."
+	 }
+	  function function5() {
+	     document.getElementById("cartoons").src = "epicblue.jpg";
+	     document.getElementById("discription").innerHTML = "All babies born during the production of a film are credited on that film as Blue Sky Babies."
+	 }
+	 
+	 
+	 
+     //choosing a background colour
+     function backgroundStyle(){
+          	 var style1 = document.getElementById("background").value;
+			 if(style1 == "Blue")
+			 {
+			 document.getElementById("animation").style.backgroundColor = "#192841";
+		     }
+			 else if(style1 == "Burgundy"){
+			 document.getElementById("animation").style.backgroundColor = "#8D021F";
+           	 }
+			 else if(style1 == "Purple"){
+			 document.getElementById("animation").style.backgroundColor = "#301934";
+           	 }			 
+			 else if(style1 == "Pine"){
+			 document.getElementById("animation").style.backgroundColor = "#01796F";
+           	 }
+             else if(style1 == "Gray"){
+			 document.getElementById("animation").style.backgroundColor = "Gray";
+           	 }
+     }
+	 
+	 
+	 //choosing a font colour
+	 function fontColor(){
+	         var style2 = document.getElementById("font").value;
+			 if(style2 == "White")
+			 {
+			 document.getElementById("demo").style.color = "white";
+			 
+		     }
+			 else if(style2 == "Pink")
+			 {
+			 document.getElementById("demo").style.color = "pink";
+		     }
+			 else if(style2 == "Purple")
+			 {
+			 document.getElementById("demo").style.color = "purple";
+		     }
+			 else if(style2 == "Blue")
+			 {
+			 document.getElementById("demo").style.color = "blue";
+		     }
+			 
+		}
+	</script>
+	
+	 <div class="footer"> 
+			<p id="site">© 2020 by sitename. The sitename is not responsible for the content from other sites.</p>
+			<div class="related_link">
+								<a href="https://www.facebook.com/"><img src="facebook.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								<a href="https://twitter.com/"><img src="twit.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								<a href="https://www.linkedin.com/login"><img src="linkedin.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								<a href="https://www.instagram.com/accounts/login/"><img src="insta1.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								<a href="https://youtube.com/"><img src="youtube1.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+								</div>
+								
+			 <p id="contact-us"> Contact us : <a href="wonderworldanimation@gmail.com">www.wonderworldanimation@gmail.com</a></p>
+			 
+			
+			  
+			  		
+								<button class="f-button"><a href="" >Back to top</a></button>
+								
+
+								<button class="f-button"><a href="..\Editors page\student_04.html" >page editor</a></button>
+			 
+			
+			</div> <!..footer..>
+			
+			
+		
+		</div>  <!..grid-container..>
+</body>
+</html>

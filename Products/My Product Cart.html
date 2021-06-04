@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<title>Shop</title>
+	<link rel="stylesheet" href="shop.css">
+	<link rel = "stylesheet" type="text/css" href= "main1.css">
+	<script src="shops.js"> </script>
+	</head>
+	<body>
+		<div class="grid-container">
+		
+			<div class="header">
+			
+				<img src="logo1.png" alt="" id="logo">
+				
+								<!-- This is search bar-->
+			<form id="search-bar" action="#">
+				<input  placeholder="Search..." maxlength="8" id="search">
+				<input type="submit" value="Search" id="submit">   
+			</form>
+				
+				<div class="topnavigation">
+				 
+					<a href="..\Home\home.html">Home</a>
+					 <div class="Genre">
+							<button class="dropbtn "> Genre 
+							  <i class=""></i>
+							</button>
+							<div class="dropdown-Genre">
+							   
+							  <div class="row">
+								<div class="column">
+								
+								  <a href="..\Genre\Family\family.html">Family</a>
+								  <a href="..\Genre\Horror\horror.html">Horror</a>
+								  <a href="..\Genre\Fantasy\fantasy.html">Fantasy</a>
+								  <a href="..\Genre\Adventure\adventure.html">Adventure</a>
+								</div>
+								<div class="column">
+								 
+								</div>
+
+							  </div>
+							</div>
+						  </div> 
+					
+					<a href="..\Funfacts\thumbnail.html">Fun Facts</a>
+					<a href="..\Quiz\quiz.html">Quiz</a>
+					<a href="..\Sitemap\Sitemap.html">Site Map</a>
+					<a href="..\Feedback\Feedback.html">Feedback</a>
+					<a href="..\Our Team\aboutus.html">About Us</a>					
+					<a href="..\Products\My Product Cart.html">Shop</a>
+			</div><!..topnav>
+				
+			</div> <!..header..>
+			
+			<!--Strat of pro-grid-->	
+			<div id="products" class="pro-grid">
+				<div id="fontChanger">
+					<button class="button" type="button" onclick="zoomIn()" >+</button>
+					<a href="My Product Cart.html"><button class="button" type="button">Reset</button></a>
+					<button class="button" type="button" onclick="zoomOut()" >-</button>
+				</div>
+				
+				<!--This is a form with personal information-->
+				<fieldset id="form">
+				<legend>Personal Information</legend>
+					<form>					
+						<label for="fullName">Full Name:* </label><br><br>
+						<input type="text" id="fullName" name="fullName" placeholder="Stefaniya Joseph" required aria-required="true"><br><br>
+						<label for="contactNo">Contact No:* </label><br><br>
+						<input type="text" id="contactNo" name="contactNo" placeholder="076 7568756" required aria-required="true"><br><br>
+						<label for="email">Email Address:* </label><br><br>
+						<input type="text" id="email" name="email" placeholder="joseph123@gmail.com" required aria-required="true"><br><br>
+						<label for="address">Delivery Address: </label><br><br>
+						<textarea name="address" id="address" placeholder="No:123,47th lane,wellawatta,col-04"></textarea><br><br>	
+					</form>
+					<button id="placeOrder" class="order" type="button" onclick="placeOrder()">Place Order</button><br><br>
+					<a href="My Product Cart.html"><button type="button" class="order">Reset Order</button></a>
+				</fieldset>
+				
+				<!--fieldset for story books-->	
+				<fieldset class="productStory">
+					<legend>Story Books</legend>
+					<div>
+						
+						<!--product 1-->
+						<div class="product">
+							<img class="img" src="image/zootopia.jpg" alt="Zootopia story book">
+							<div class="name">
+								<p>Zootopia</p>
+							</div>
+							<div class="discription">
+								<p><b>Initial release:</b>February 10, 2016</p><br>
+							</div>
+							<div class="price">
+								<p>Rs: 300.00</p><br>
+							</div>
+							<div class="quantity">
+								<label for="quantity">Quatity(max=10): </label>
+								<input type="number" id="quantity1" name="quantity" min="1" max="10" required><br><br>
+								<div class="add" id="cart1" onmouseup="added('cart1','quantity1')"> Add To Cart </div>
+							</div>
+						</div>	
+							
+						<!--product 2-->
+						<div class="product">
+							<img class="img" src="image/snow white.jpg" alt="Snow white story book">
+							<div class="name">
+								<p>Snow White</p>
+							</div>
+							<div class="discription">
+								<p><b>Initial release:</b>December 21, 1937</p><br>
+							</div>
+							<div class="price">
+								<p>Rs: 450.00</p><br>
+							</div>
+							<div class="quantity">
+								<label for="quantity">Quatity(max=10): </label>
+								<input type="number" id="quantity2" name="quantity" min="1" max="10" placeholder="1" required><br><br>
+								<div class="add" id="cart2" onmouseup="added('cart2','quantity2')"> Add To Cart </div>
+							</div>
+						</div>	
+						
+						<!--product 3-->						
+						<div class="product">
+							<img class="img" src="image/nemo.jpg" alt="Finding nemo story book">
+							<div class="name">
+								<p>Finding Nemo</p>
+							</div>
+							<div class="discription">
+								<p><b>Initial release:</b>May 30, 2003</p><br>
+							</div>
+							<div class="price">
+								<p>Rs: 550.00</p><br>
+							</div>
+							<div class="quantity">
+								<label for="quantity">Quatity(max=10): </label>
+								<input type="number" id="quantity3" name="quantity" min="0" max="10"><br><br>
+								<div class="add" id="cart3" onmouseup="added('cart3','quantity3')"> Add To Cart </div>
+							</div>
+						</div>		
+					</div>
+				</fieldset><br><br>
+					
+				<!--fieldset for story books-->		
+				<fieldset class="productDvd">
+					<legend>DVD</legend>
+					<div>
+					
+						<!--product 4-->
+						<div class="product">
+							<img class="img" src="image/Cinderella.jpg" alt="cinderella DVD">
+							<div class="name">
+								<p>Cinderella DVD</p>
+							</div>
+							<div class="discription">
+								<p><b>Initial release:</b>February 22, 1950</p><br>
+							</div>
+							<div class="price">
+								<p>Rs: 350.00</p><br>
+							</div>
+							<div class="quantity">
+								<label for="quantity">Quatity(max=10): </label>
+								<input type="number" id="quantity4" name="quantity" min="0" max="10"><br><br>
+								<div class="add" id="cart4" onmouseup="added('cart4','quantity4')"> Add To Cart </div>
+							</div>
+						</div>	
+						
+						<!--product 5-->
+						<div class="product">
+							<img class="img" src="image/hotel transylvania.jpg" alt="Hotel tansylvania DVD">
+							<div class="name">
+								<p>Hotel Transylvania</p>
+							</div>
+							<div class="discription">
+								<p><b>Initial release:</b>September 8, 2012</p><br>
+							</div>
+							<div class="price">
+								<p>Rs: 250.00</p><br>
+							</div>
+							<div class="quantity">
+								<label for="quantity">Quatity(max=10): </label>
+								<input type="number" id="quantity5" name="quantity" min="0" max="10"><br><br>
+								<div class="add" id="cart5" onmouseup="added('cart5','quantity5')"> Add To Cart </div>
+							</div>
+						</div>	
+						
+						<!--product 6-->
+						<div class="product">
+							<img class="img" src="image/boss baby.jpg" alt="Boss baby DVD">
+							<div class="name">
+								<p>Boss Baby</p>
+							</div>
+							<div class="discription">
+								<p><b>Initial release:</b>March 31, 2017</p><br>
+							</div>
+							<div class="price">
+								<p>Rs: 300.00</p><br>
+							</div>
+							<div class="quantity">
+								<label for="quantity">Quatity(max=10): </label>
+								<input type="number" id="quantity6" name="quantity" min="0" max="10"><br><br>
+								<div class="add" id="cart6" onmouseup="added('cart6','quantity6')"> Add To Cart </div>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+			</div>    <!--End of pro-grid-->
+			
+			<div class="footer"> 
+				<p id="site">© 2020 by sitename. The sitename is not responsible for the content from other sites.</p>
+				<div class="related_link">
+									<a href="https://www.facebook.com/"><img src="facebook.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+									<a href="https://twitter.com/"><img src="twit.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+									<a href="https://www.linkedin.com/login"><img src="linkedin.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+									<a href="https://www.instagram.com/accounts/login/"><img src="insta1.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+									<a href="https://youtube.com/"><img src="youtube1.png" alt="HTML tutorial" style="width:56px;height:52px;"></a>
+									</div>
+									
+				 <p id="contact-us"> Contact us : <a href="wonderworldanimation@gmail.com">www.wonderworldanimation@gmail.com</a></p>
+				 
+				
+				  
+						
+									<button class="f-button"><a href="#search-bar" >Back to top</a></button>
+									
+
+									<button class="f-button"><a href="..\Editors page\student_01.html"" >page editor</a></button>
+				 
+				
+			</div> <!..footer..>
+				
+				
+			
+		</div>  <!..grid-container..>
+	</body>
+</html>

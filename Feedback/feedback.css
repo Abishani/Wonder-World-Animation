@@ -1,0 +1,155 @@
+.feedback{
+		padding-top:50px;
+				
+				padding:5%;
+				margin:8% 30% 0% 20%;
+				font-family:Calibri;
+				font-weight:bold;
+				color:#fff;
+				width:45%; 
+				height:630px;
+				background-image: url(form6.2.jpg);
+				font-size: 66%;
+			}
+			h1{
+			font-family:algerian;
+				color:#fff;
+				text-align:center;
+				margin-bottom: 5%;
+				margin-top: -5%;
+				letter-spacing:4px;
+				
+			}
+			input[type=text], select, textarea {
+				width: 90%;
+				padding: 2%;
+				background-color:#fff;
+				border: 1px solid #ccc;
+				border-radius: 4px;
+				box-sizing: border-box;
+				margin-top: 3px;
+				margin-bottom: 8px;
+				resize: vertical;
+			}
+			#set {
+			color:#330066;
+			font-weight:bold;
+			background-color:#fff;
+			margin-top: 10px;
+			margin:2%;
+			padding:2%;
+			font-size:16px;
+			border-color:#330066;
+			border-radius: 5px;
+			cursor: pointer;
+			float: right;
+			}
+			input[type=Reset] {
+			color:#330066;
+			font-weight:bold;
+			background-color:#fff;
+			margin-top: 10px;
+			margin:2%;
+			padding:2%;
+			font-size:16px;
+			border-color:#330066;
+			border-radius: 5px;
+			cursor: pointer;
+			float: right;
+}
+			
+			textarea{
+				height:100px;
+			}
+				
+			.main{
+				height: 850px;
+			}	
+			.footer{
+			height:255px;
+		
+			grid-column:1/12 ;
+			grid-row:3;
+			background-color:#330066;
+		
+	}
+	
+		.f-button{
+			display: inline-block;
+			border: none;
+			padding: 0.7%;
+			float: right;
+			margin: 3% 1.5% 1% 1.2%;
+			background-color:#070421;
+			font-size: 60%;
+			border-radius: 5%;
+			height:50px;
+		}
+			
+			.f-button a{
+				color: white;
+				text-decoration: none;			
+			
+		}
+			#site{
+			font-family:Calibri;
+			margin:2%;
+			padding left:20px;
+			font-size:14px;
+			float left;
+			}
+			
+		
+		#contact-us{
+		font-family:Calibri;
+			float:left;
+			font-size: 60%;
+			margin: 4%;
+			color: white;
+		}
+		
+		.related_link{
+		
+		padding-right:0px;
+		}
+		*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float:;
+    height: 46px;
+    padding: 0 200px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:33px;
+    color:#fff;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+

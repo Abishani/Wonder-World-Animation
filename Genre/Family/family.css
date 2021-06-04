@@ -1,0 +1,99 @@
+.heading{
+	position:relative;
+	text-align:center;
+	width:600px;
+	height:200px;
+	margin-top:50px;
+}
+
+.heading img{
+	width:800px;
+	height:200px;
+	margin-left:50%;
+	filter:hue-rotate(90deg);
+}
+.text{
+	position:absolute;
+	top: 50%;
+	left:50%;
+	transform: translate(-50%,-50%);
+	margin-left:65%;
+	text-align:center;
+	font-size:100px;
+	color:#00ffff;
+	text-shadow:4px 4px 3px #000099;
+}
+.cartoonBox{
+	position:relative;
+	width:300px;
+	height:300px;
+	background-color: #ff0;
+	margin:10px;
+	display: inline-block;
+	box-sizing:border-box;
+	overflow: hidden;
+}
+.container{
+	padding:0;
+	margin:70px auto 0;
+	font-family: sans-serif;
+	width:1280px;
+	min-height:500px;
+	display: flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+#wrapper{
+	grid-column:1/12 ;
+	grid-row:3;
+	font-size: 30px;
+}
+.container .cartoonBox .imgBox{
+	position:relative;
+	overflow: hidden;
+}
+.container .cartoonBox .imgBox img{
+	max-width:300px;
+	height:300px;
+	transition:transform 2s;
+}
+.container .cartoonBox:hover .imgBox img{
+	transform: scale(1.2);
+	overflow: hidden;
+}
+.container .cartoonBox .information{
+		position:absolute;
+		top: 10px;
+		left: 10px;
+		bottom:10px;
+		right: 10px;
+		background:rgba(255,255,255,.8);
+		transform:scaleY(0);
+		transition:transform .5s;
+		
+}
+.container .cartoonBox:hover .information{
+	transform: scaleY(1);
+}
+
+.container .cartoonBox .information .content{
+	position: absolute;
+	top:50%;
+	transform:translateY(-50%);
+	text-align:left;
+	padding:15px;
+	color:black;
+}
+.container .cartoonBox .information .content h3{
+	margin:10px 0 0;
+	padding:0;
+	font-size:20px;
+	color:blue;
+	text-align:center;
+	font-family:casteller;
+}
+.container .cartoonBox .information .content p{
+	font-size:15px;
+	font-family:Aldine;
+	line-height:1.5;
+}
